@@ -6,11 +6,11 @@ public class Main {
 
     }
 
-    public static boolean isPalindrome(String word){
+    public static boolean isPalindrome(String word) {
         int i = 0;
-        int j = word.length()-1;
-        while (i < j ){
-            if (word.charAt(i) != word.charAt(j)){
+        int j = word.length() - 1;
+        while (i < j) {
+            if (word.charAt(i) != word.charAt(j)) {
                 return false;
             }
             i++;
@@ -19,9 +19,9 @@ public class Main {
         return true;
     }
 
-    public static  boolean isPalindrome2(String word){
+    public static boolean isPalindrome2(String word) {
         String reverse = "";
-        for (int i = word.length()-1;i>=0;i--){
+        for (int i = word.length() - 1; i >= 0; i--) {
             reverse += word.charAt(i);
         }
 
